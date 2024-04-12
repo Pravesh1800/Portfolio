@@ -70,7 +70,7 @@ link.markdown(f'<div class="link-text"><a href="http://www.linkedin.com/in/prave
 git.markdown(f'<div class="link-text"><a href="https://github.com/Pravesh1800" target="_blank">Github</a></div>', unsafe_allow_html=True)
 
 # Render the Portfolio link
-port.markdown(f'<div class="link-text"><a href="http://localhost:8502/streamlit.link" target="_blank">Portfolio</a></div>', unsafe_allow_html=True)
+port.markdown(f'<div class="link-text"><a href="https://portfolio-pravesh.streamlit.app/" target="_blank">Portfolio</a></div>', unsafe_allow_html=True)
 
 # Render the Kaggle link
 kaggle.markdown(f'<div class="link-text"><a href="https://www.kaggle.com/praveshsingh471" target="_blank">Kaggle</a></div>', unsafe_allow_html=True)
