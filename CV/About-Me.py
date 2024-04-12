@@ -227,7 +227,7 @@ st.write("""
 st.write('''
     - - _Logistic regression_
     - - _Linear regression_
-    - - _Decition trees_ 
+    - - _Decision trees_ 
     - - _Artificial Neural Networks_
 ''')
 
