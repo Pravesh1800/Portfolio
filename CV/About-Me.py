@@ -19,7 +19,7 @@ with details:
         label="📄Download Resume", 
         data=pdf_data, 
         file_name="Pravesh's-Resume.pdf", 
-        mime="application/pdf"
+        mime="application/octet-stream"
     )
     email_style = """
     <style>
