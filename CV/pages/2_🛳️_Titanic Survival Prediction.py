@@ -11,15 +11,15 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 st.sidebar.markdown(" ### Navigation Bar")
 
 
-model = joblib.load(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\model.joblib")
-encoder = joblib.load(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\encoder.joblib")
-scaler = joblib.load(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\scaler.joblib")
+model = joblib.load("CV/titanic/model.joblib")
+encoder = joblib.load("CV/titanic/encoder.joblib")
+scaler = joblib.load("CV/titanic/scaler.joblib")
 
 
 
 st.title("Titanic Survival Prediction")
 
-st.image(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\img.jpg",use_column_width=True)
+st.image("CV/titanic/img.jpg",use_column_width=True)
 
 st.write("Please enter all the details")
 
@@ -76,11 +76,11 @@ if st.button("Submit"):
         
     if predic == 0:
         st.info("You would not have survived the titanic")
-        gif_url = r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\shinking.gif"  
+        gif_url = "CV/titanic/sink_funny.gif" 
         st.image(gif_url, caption='Uh-Ohhh you drowned🥲', use_column_width=True)
     elif predic == 1:
         st.info("You would have survived the Titanic")
-        gif = r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\titanic\survived.gif"  
+        gif = "CV/titanic/survived.gif"
         st.image(gif, caption='Uh-Ohhh you drowned🥲', use_column_width=True)
         st.balloons()
         
