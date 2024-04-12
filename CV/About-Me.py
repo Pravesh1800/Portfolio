@@ -15,7 +15,7 @@ with details:
     st.title('Pravesh Singh')
     st.write("A Quick learning individual looking for a potential chance to work in the Machine Learning space")
     with open("CV/CV.pdf", "rb") as f:
-    pdf_data = f.read()
+        pdf_data = f.read()
     
     st.download_button(
         label="📄Download Resume", 
