@@ -11,19 +11,19 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 st.sidebar.markdown(" ### Navigation Bar")
 
 
-model = joblib.load(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\house\model.joblib")
-encoder = joblib.load(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\house\encoder.joblib")
+model = joblib.load("CV/house/model.joblib")
+encoder = joblib.load("CV/house/encoder.joblib")
 
 st.title("House Price Prediction")
 
-st.image(r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\house\img.jpg",use_column_width=True)
+st.image("CV/house/img.jpg",use_column_width=True)
 
 
 st.markdown("## Download the template")
 st.write("Please download the template file and fill it up with all the required data, and please make sure not to leave any column empty")
 st.write("If one or more than one column/columns is/are left empty you will be displayed a list of all the empty columns, please use the list as a reference to fill up all of your empty columns ")
 
-file =r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\house\sample.csv"
+file ="CV/house/sample.csv"
 data = pd.read_csv(file)
 st.download_button(
     label='Download the Template', 
@@ -34,7 +34,7 @@ st.download_button(
 
 st.write("You can refer to this text document to get all the information regarding the columns and fill the columns with the relevant data accordingly")
 
-file_path = r"C:\Users\ps180\Downloads\Portfolio\digital-resume-template-streamlit-master\assets\house\data_description.txt"
+file_path = "CV/house/data_description.txt"
 with open(file_path, 'r') as file:
     data = file.readlines()
 st.write("Data description:")
